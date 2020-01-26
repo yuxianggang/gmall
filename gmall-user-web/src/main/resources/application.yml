@@ -1,0 +1,17 @@
+server:
+  port: 8081
+  context-path: /user
+
+spring:
+  dubbo:
+    application:
+      name: gmall-user-web
+    protocol:
+      name: dubbo
+    registry:
+      address: 192.168.25.160:2181
+      protocol: zookeeper
+      check: false
+    consumer:
+      timeout: 3000
+      check: false

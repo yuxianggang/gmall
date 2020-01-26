@@ -9,3 +9,12 @@ spring:
     url: jdbc:mysql://192.168.25.160:3306/gmall-study?useUnicode=true&characterEncoding=UTF-8
     username: root
     password: root
+  dubbo:
+    protocol:
+      name: dubbo
+      port: 20201
+    registry:
+      address: 192.168.25.160:2181
+      protocol: zookeeper
+    application:
+      name: user-service
