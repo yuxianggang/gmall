@@ -1,5 +1,5 @@
 server:
-  port: 8070
+  port: 8071
 mybatis:
   type-aliases-package: com.igeek.gmall.pojo
   configuration:
@@ -10,11 +10,11 @@ spring:
     username: root
     password: root
   dubbo:
+    application:
+      name: manager-service
     protocol:
       name: dubbo
       port: 20201
     registry:
       address: 192.168.25.160:2181
       protocol: zookeeper
-    application:
-      name: user-service

@@ -1,10 +1,10 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   dubbo:
     application:
-      name: gmall-user-web
+      name: gmall-manager-web
     protocol:
       name: dubbo
     registry:
