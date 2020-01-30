@@ -1,4 +1,4 @@
-package com.igeek.gmall.manager;
+package com.igeek.gmall;
 
 import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;

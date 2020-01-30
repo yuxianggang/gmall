@@ -4,6 +4,7 @@ mybatis:
   type-aliases-package: com.igeek.gmall.pojo
   configuration:
     map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*Mapper.xml
 spring:
   datasource:
     url: jdbc:mysql://192.168.25.160:3306/gmall-study?useUnicode=true&characterEncoding=UTF-8
@@ -18,3 +19,7 @@ spring:
     registry:
       address: 192.168.25.160:2181
       protocol: zookeeper
+  redis:
+    host: 192.168.25.153
+    port: 6379
+    database: 0
