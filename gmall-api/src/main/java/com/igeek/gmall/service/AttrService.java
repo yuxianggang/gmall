@@ -2,8 +2,10 @@ package com.igeek.gmall.service;
 
 import com.igeek.gmall.pojo.PmsBaseAttrInfo;
 import com.igeek.gmall.pojo.PmsBaseAttrValue;
+import com.igeek.gmall.pojo.PmsBaseSaleAttr;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author 余祥刚
@@ -15,4 +17,5 @@ public interface AttrService {
     int saveAttrInfo(PmsBaseAttrInfo pmsBaseAttrInfo);
 
     List<PmsBaseAttrValue> getAttrValueList(String attrId);
+
 }

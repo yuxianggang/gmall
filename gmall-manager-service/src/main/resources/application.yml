@@ -15,7 +15,6 @@ spring:
       name: manager-service
     protocol:
       name: dubbo
-      port: 20201
     registry:
       address: 192.168.25.160:2181
       protocol: zookeeper

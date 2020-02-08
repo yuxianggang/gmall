@@ -29,7 +29,7 @@ public class IndexController {
     @Reference
     private SpuService spuService;
 
-    @RequestMapping("{skuId}.html")
+    @RequestMapping("{skuId}")
     public String index(@PathVariable String skuId, Model model){
         PmsSkuInfo skuInfo = skuService.getSkuInfo(skuId);
         model.addAttribute("skuInfo",skuInfo);

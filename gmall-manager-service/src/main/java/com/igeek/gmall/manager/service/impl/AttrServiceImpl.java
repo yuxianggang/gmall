@@ -5,12 +5,15 @@ import com.igeek.gmall.manager.mapper.AttrMapper;
 import com.igeek.gmall.manager.mapper.AttrValueMapper;
 import com.igeek.gmall.pojo.PmsBaseAttrInfo;
 import com.igeek.gmall.pojo.PmsBaseAttrValue;
+import com.igeek.gmall.pojo.PmsBaseSaleAttr;
 import com.igeek.gmall.service.AttrService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author 余祥刚
@@ -71,4 +74,5 @@ public class AttrServiceImpl implements AttrService {
         attrValue.setAttrId(attrId);
         return attrValueMapper.select(attrValue);
     }
+
 }
